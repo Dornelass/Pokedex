@@ -4,12 +4,13 @@ const loadMoreButton = document.getElementById ('loadMoreButton')
 const limit = 10
 let offset = 0;
 
-const maxRecords = 151
+const maxRecords = 160
 
 function convertPokemonToLi (pokemon) {
 
     return `
         <li class="pokemon ${pokemon.type}" >
+                    <span class="gen">generation ${pokemon.gen}</span>
                     <span class="number">#00${pokemon.number}</span> 
                     <span class="name">${pokemon.name}</span>
     

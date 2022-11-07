@@ -4,7 +4,9 @@
 
     list-style: none;
     padding: 0;
+    
     margin: 0;
+    
 }
 
 .pokemon  {
@@ -14,6 +16,7 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    box-shadow: 1rem black;
     
     background-color: #1ccaa9;
     color: white;
@@ -21,6 +24,11 @@
 
 }
 
+.content h1 {
+                                                
+    
+    color: black;
+}
 /* Cor por tipos  */
 
 .normal{ background-color: #b7b8aa;}
@@ -66,6 +74,15 @@
     margin:  0;
 
     color: #fff;
+}
+.pokemon .gen {
+    display: flex;
+
+    color: black;
+    opacity: .4;
+    text-transform: capitalize;
+    font-size: 10px;
+
 }
 
 .pokemons .number {

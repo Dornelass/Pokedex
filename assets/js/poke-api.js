@@ -1,6 +1,12 @@
     // API
 const pokeApi = {}
 
+function generation (gameVersion) {
+    return gameVersion
+}
+
+
+
 function convertPokeApiDetailToPokemon(pokeDetail) {
     const pokemon = new Pokemon ()
     
@@ -14,7 +20,7 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.type = type
 
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
-
+    pokemon.gen = generation(pokeDetail.game_indices[0].version.name)
     return pokemon
 }
 

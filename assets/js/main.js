@@ -11,7 +11,7 @@ function convertPokemonToLi (pokemon) {
     return `
         <li class="pokemon ${pokemon.type}" >
                     <span class="gen">generation ${pokemon.gen}</span>
-                    <span class="number">#00${pokemon.number}</span> 
+                    <span class="number">#0${pokemon.number}</span> 
                     <span class="name">${pokemon.name}</span>
     
                     <div class="detail">

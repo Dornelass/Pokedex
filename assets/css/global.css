@@ -7,7 +7,8 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-color: rgb(243, 231, 229);
+    
     
 }
 
@@ -17,6 +18,9 @@ body {
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
+    border: solid black 0.2rem;  
+    box-shadow: 0rem 0rem 2rem rgb(240, 138, 138);                              
+
 }
 
 @media screen and (min-width: 992px) {

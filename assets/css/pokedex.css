@@ -18,9 +18,8 @@
     border-radius: 1rem;
     box-shadow: 1rem black;
     
-    background-color: #1ccaa9;
     color: white;
-
+    border: solid black 0.1rem;
 
 }
 
@@ -79,7 +78,7 @@
     display: flex;
 
     color: black;
-    opacity: .4;
+    opacity: .5;
     text-transform: capitalize;
     font-size: 10px;
 

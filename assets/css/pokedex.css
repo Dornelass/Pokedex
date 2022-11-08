@@ -169,10 +169,12 @@
     background-color: #504da6;
     color: white;
     transition-duration: 0.5s;
+    border:  solid 0.18rem #ffce31;
 }
 button:hover {
     
     background-color: #ffce31;
+    border:  solid 0.18rem #504da6;
     color: black;
 }
 

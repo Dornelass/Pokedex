@@ -1,7 +1,9 @@
 
 const pokemonList = document.getElementById('pokemonList')  //Pegando a lista do HTML
 const loadMoreButton = document.getElementById ('loadMoreButton')
-const limit = 20
+
+
+const limit = 10
 let offset = 0;
 
 const maxRecords = 160
@@ -9,19 +11,28 @@ const maxRecords = 160
 function convertPokemonToLi (pokemon) {
 
     return `
-        <li class="pokemon ${pokemon.type}" >
-                    <span class="gen">generation ${pokemon.gen}</span>
-                    <span class="number">#0${pokemon.number}</span> 
-                    <span class="name">${pokemon.name}</span>
+    <div>
+    <li class="pokemon ${pokemon.type}" >
+    <span class="gen">generation ${pokemon.gen}</span>
+    <span class="number">#0${pokemon.number}</span> 
+    <span class="name">${pokemon.name}</span>
+
+    <div class="detail">
+        <ol class="types">
+        ${pokemon.types.map((type) => `<li class="type ${type}" >${type}</li>`).join('')}
+        </ol>
+        <img id="imag" src="${pokemon.photo}" 
+            alt="${pokemon.name}">
+            
+            
+    </div>
+    </li>
+
     
-                    <div class="detail">
-                        <ol class="types">
-                        ${pokemon.types.map((type) => `<li class="type ${type}" >${type}</li>`).join('')}
-                        </ol>
-                        <img src="${pokemon.photo}" 
-                            alt="${pokemon.name}">
-                    </div>
-                    </li>
+    </div>
+       
+            
+                    
         `
 
     }
@@ -55,7 +66,5 @@ if (qtdRecordNextPage >= maxRecords ) {
     }
 
 
-    
 })
-
 

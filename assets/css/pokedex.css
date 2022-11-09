@@ -36,50 +36,8 @@
     height: 100px;
 }
 
-.content h1 {
-    letter-spacing: 0.1rem;
-    color: #ffcc01;
-    -webkit-text-stroke: #385ba9 0.1rem;
-}
-/* Cor por tipos  */
 
-.normal{ background-color: #b7b8aa;}
 
-.grass {background-color: #8bd750}
-
-.fire { background-color: #fb5643}
-
-.water {background-color: #55aefe}
-
-.fighting{background-color: #9e4c37}
-
-.flying{background-color:  #7da2fd;}
-
-.poison{background-color:  #a85da0;}
-
-.ground{ background-color: #f0cd55;}
-
-.rock {background-color: #cebc72;}
-
-.bug {background-color: #c3d21f;}
-
-.ghost {background-color: #7973d3;}
-
-.electric {background-color: #fee739;}
-
-.psychic {background-color:  #fe62b3;}
-
-.ice {background-color:  #95f1fe;}
-
-.dragon{background-color:  #8974fd;}
-
-.dark {background-color: #8f6a57;}
-
-.steel {background-color: #c4c2da;}
-
-.fairy {background-color: #faadff;}
-
-/* --------------------------- */
 
 .pokemon .name {
     text-transform: capitalize;
@@ -120,10 +78,15 @@
 
  .pokemon .detail img {      /* imagem  */
     max-width: 100%;
-    height: 70px;
+    height: 80px;
+
     
 }
-
+.pokemon .detail img:hover{     
+    max-width: 100%;
+    transform: scale(1.2);
+    
+}
 .pokemon .detail .types {
 
     
@@ -148,7 +111,6 @@
 
 
 
-/*       Responsividade             */
 
 .pagination {
     display: flex;
@@ -180,6 +142,48 @@ button:hover {
 
 
 
+
+/* Cor por tipos  */
+
+.normal{ background-color: #b7b8aa;}
+
+.grass {background-color: #8bd750}
+
+.fire { background-color: #fb5643}
+
+.water {background-color: #55aefe}
+
+.fighting{background-color: #9e4c37}
+
+.flying{background-color:  #7da2fd;}
+
+.poison{background-color:  #a85da0;}
+
+.ground{ background-color: #f0cd55;}
+
+.rock {background-color: #cebc72;}
+
+.bug {background-color: #c3d21f;}
+
+.ghost {background-color: #7973d3;}
+
+.electric {background-color: #fee739;}
+
+.psychic {background-color:  #fe62b3;}
+
+.ice {background-color:  #95f1fe;}
+
+.dragon{background-color:  #8974fd;}
+
+.dark {background-color: #8f6a57;}
+
+.steel {background-color: #c4c2da;}
+
+.fairy {background-color: #faadff;}
+
+/* --------------------------- */
+
+/*       Responsividade             */
 
 
 @media screen and (min-width: 380px) {

@@ -1,6 +1,7 @@
     // API
 const pokeApi = {}
 
+
 function generation (gameVersion) {
     return gameVersion
 }
